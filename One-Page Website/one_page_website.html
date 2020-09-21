@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {text-align: center;}
+        #about {text-align: center;}
+    </style>
+    <script src="JS/one_page_website.js" defer></script>
+    <title>Big Cats</title>
+    <link rel="stylesheet" href="CSS\one_page_website.css">
+</head>
+<body style="background-color: #ffad42;">
+    <!--HOME-->
+    <h2 id="home">Big Cats</h2>
+    <p id="about">
+        <em>The term "big cat" is typically used to refer to any of the five<br> living members of the genus Panthera, namely tiger, lion, jaguar, leopard, and snow leopard.</em>
+    </p>
+    <table align="center" width="50%">
+        <div>
+            <tr>
+                <th><a href="#home" id="link">HOME</th></a>
+                <th><a href="#gallery" id="link">GALLERY</th></a>
+                <th><a href="#video" id="link">VIDEO</th></a>
+                <th><a href="#questions" id="link">QUESTIONS</th></a>
+            </tr>
+        </div> 
+    </table>
+    <!--END HOME-->
+
+    <!--GALLERY-->
+    <h2 id="gallery">Gallery</h2>
+        <div>
+            <table>
+                <tr>
+                    <td><img src="images\image_1.jpg" onclick="openModal();currentSlide(1)" alt="Tiger"></td>
+                    <td><img src="images\image_2.jpg" onclick="openModal();currentSlide(2)" alt="Lion"></td>
+                    <td><img src="images\image_3.jpg" onclick="openModal();currentSlide(3)" alt="Jaguar"></td>
+                    <td><img src="images\image_4.jpg" onclick="openModal();currentSlide(4)" alt="Leopard"></td>
+                    <td><img src="images\image_5.jpg" onclick="openModal();currentSlide(5)" alt="Snow Leopard"></td>
+                </tr>
+            </table>
+        </div>   
+        
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/image_1.jpg" style="width:400px">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/image_2.jpg" style="width:400px">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/image_3.jpg" style="width:400px">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/image_4.jpg" style="width:400px">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/image_5.jpg" style="width:400px">
+      </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+        <img class="demo" src="images/image_1.jpg" onclick="currentSlide(1)" alt="Tiger">
+    </div>
+
+    <div class="column">
+        <img class="demo" src="images/image_2.jpg" onclick="currentSlide(2)" alt="Lion">
+    </div>
+
+    <div class="column">
+        <img class="demo" src="images/image_3.jpg" onclick="currentSlide(3)" alt="Jaguar">
+    </div>
+
+    <div class="column">
+        <img class="demo" src="images/image_4.jpg" onclick="currentSlide(4)" alt="Leopard">
+    </div>
+
+    <div class="column">
+        <img class="demo" src="images/image_5.jpg" onclick="currentSlide(5)" alt="Snow Leopard">
+    </div>
+
+  </div>
+</div>
+
+    <!--END GALLERY-->
+
+    <!--VIDEO-->
+    <div style="text-align: center;">
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dTuV0Z-nnT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!--END VIDEO-->
+
+    <!--QUESTIONS-->
+    <h2>Ask us anything about Big Cats!</h2>
+    <div id="questions">
+        <div class="input">
+            <form action="post">
+                <input type="text" value="Your Name"><br>
+                <input type="text" value="Email Address"><br>
+                <input type="text" value="Your Question">
+                <div style="text-align: center;">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--END QUESTIONS-->
+
+    <!--BOTTOM NAV-->
+    <br>
+    <table align="center" width="50%">
+        <div>
+            <tr>
+                <th><a href="#home" id="link">HOME</th></a>
+                <th><a href="#gallery" id="link">GALLERY</th></a>
+                <th><a href="#video" id="link">VIDEO</th></a>
+                <th><a href="#questions" id="link">QUESTIONS</th></a>
+            </tr>
+        </div> 
+    </table>
+    <br>
+    <br>
+    <!--END BOTTOM NAV-->
+
+    <!--FOOTER-->
+    <div style="text-align: center;">
+        www.bigcats.cats &nbsp;&nbsp; &copy; 2020
+    </div>
+    <!--END FOOTER-->
+    <br>
+    <br>
+
+</body> 
+</html>
