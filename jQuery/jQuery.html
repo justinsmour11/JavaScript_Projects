@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+</head>
+
+<script>
+$(document).ready(function() {
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#2").css({"color":"red"}); //Assign color to text in id 2
+    $("#3").click(function() { //Hide h1 when you click text in id 3
+        $("h1").hide();
+    })
+    $("#2").hide(1500); //Hide id 2 after 1.5 seconds
+    $("p").click(function() { //Create alert on click
+        alert("I bet you can't even dance");
+    })
+});
+
+</script>
+<body></body>
+</html>
