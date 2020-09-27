@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Seymour</title>
+    <link rel="stylesheet" href="./CSS/portfolio.css">
+</head>
+<body class="background">
+
+<!--NAVBAR-->
+
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!--make openForm function work when we click Contact on the navbar and 
+        close when we double click-->
+    </div>
+
+<!--HOME-->
+
+    <br>
+    <br>
+
+    <!--Video-->
+    <div id="home">
+        <video autoplay muted loop id="typing_video" src="./Videos/Typing_dark_04_Videvo.mov">
+        Your browser does not support this video. 
+        </video>
+    </div>
+
+    <!--Video text-->
+
+    <div class="video_text">
+        <h1 style="color: white;">Justin Seymour's Portfolio</h1>
+        <p>
+            <strong style="text-align: center;">
+                <center>
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+			        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br>- Joseph Weizenbaum
+                    <br>
+                    <br>
+                    My name is Justin Seymour. Welcome to my portfolio website. On it,
+                    I will tell you about my background and experience.
+                    <br>
+                    <br>
+                    Thank you for stopping by and enjoy!
+                </center>
+            </strong>
+        </p>
+    </div>
+<!--SLIDESHOW SECTION-->
+    <div id="slideshow">
+        <div id="slideshow_background">
+            <div id="slideshow_container">
+
+                <div class="mySlides fade">
+                    <div class="slide_number">1 /6</div>
+                    <img class="slideshow_images" src="Images/profile_n.jpg" alt="" width="100%">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">2 /6</div>
+                    <img class="slideshow_images" src="Images/HTML_CSS_and_JavaScript.jpeg" alt="" width="100%">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">3 /6</div>
+                    <img class="slideshow_images" src="Images/Python.png" alt="" width="100%">
+                    <div class="text">the popular programming language Python,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">4 /6</div>
+                    <img class="slideshow_images" src="Images/C_Sharp_and_Dot_NET.png" alt="" width="100%">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">5 /6</div>
+                    <img class="slideshow_images" src="Images/SQL_and_Database.jpg" alt="" width="100%">
+                    <div class="text">back end development, databases and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="slide_number">6 /6</div>
+                    <img class="slideshow_images" src="Images/Coding_1.jpg" alt="" width="100%">
+                    <div class="text"><a onclick="openForm()" href="#contact" style="color:white;">Contact me now!</a></div>
+                </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+<!--End slideshow-->
+<!--ABOUT SECTION-->
+
+    <div class="row" id="about">
+        <div class="column_2"> <!--Left column-->
+            <img src="./Images/Development.jpg" alt="Laptop">
+        </div>
+
+        <div class="column_1"> <!--Right column-->
+            <h1>About</h1>
+            <p>I am a software developer who loves to code! When I'm not coding, 
+            I enjoy practicing guitar, watching movies, and playing video games. 
+            <br>
+            <br>
+            I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+            Software Developer Boot Camp, and have trained and have experience in the following web and programming languages: 
+            HTML, CSS, JavaScript, SQL, C# and Python. 
+            <br>
+            <br>I am a full-stack developer and would love to work with you on your project. 
+            <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+<!--GITHUB SECTION-->
+
+    <div class="row" id="github">
+        <div class="column_1"> <!--Left column-->
+            <h1>GitHub</h1>
+            
+            <p>
+            <center>You can view my coding projects on my GitHub profile here:
+            <br>
+            <br>
+            <a href="https://github.com/justinsmour11/HTML-and-CSS-Projects">
+            My GitHub</a>
+            </center>
+            </p>
+        </div>
+
+        <div class="column_2"> <!--Right column-->
+            <a href="https://github.com/justinsmour11/HTML-and-CSS-Projects">
+                <img src="./Images/GitHub.png" alt="contact_image">
+            </a>
+        </div>
+    </div>
+
+<!--CONTACT SECTION-->
+
+    <div id="contact">
+        <button onclick="openForm()" class="pop_up_button">CONTACT</button>
+
+        <div class="form-popup" id="myForm" > <!--Contact form, right column-->
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--Where do send form data-->
+                <h1>Contact</h1>
+                <label for="">Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label for="">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                <label for="">Message:</label>
+                    <input type="text" id="message" name="message" placeholder="Please write your message here">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p>
+            <center>&copy; Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center>
+            <br>
+        </p>
+    </footer>
+    <script src="JS/portfolio.js"></script>
+</body>
+</html>
